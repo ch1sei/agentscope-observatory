@@ -1,0 +1,4 @@
+name: agentscope-observatory
+channels:
+  - conda-forge
+dependencies: []

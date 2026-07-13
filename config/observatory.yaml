@@ -1,0 +1,14 @@
+project: agentscope-observatory
+runtime:
+  environment: local-preview
+  storage: sqlite://./var/observatory.db
+  retention_days: 30
+telemetry:
+  capture_tokens: true
+  capture_tool_arguments: redacted
+  capture_file_diffs: true
+  sample_rate: 1.0
+adapters:
+  - nanobot
+  - openclaw
+  - hermes

@@ -1,0 +1,15 @@
+{
+  "session_id": "sess_8f31c2",
+  "agent": "research-orchestrator",
+  "status": "completed_with_warning",
+  "duration_ms": 18420,
+  "tokens": {"input": 8420, "output": 3190},
+  "cost_usd": 0.084,
+  "events": [
+    {"id": "evt_001", "type": "model.request", "label": "Plan research workflow", "duration_ms": 820, "status": "ok"},
+    {"id": "evt_002", "type": "tool.call", "label": "browser.search", "duration_ms": 4300, "status": "ok"},
+    {"id": "evt_003", "type": "memory.write", "label": "Persist source summary", "duration_ms": 120, "status": "ok"},
+    {"id": "evt_004", "type": "tool.call", "label": "filesystem.write", "duration_ms": 1800, "status": "warning"},
+    {"id": "evt_005", "type": "model.response", "label": "Compose final answer", "duration_ms": 620, "status": "ok"}
+  ]
+}
